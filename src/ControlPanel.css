@@ -1,0 +1,35 @@
+.Cpanel {
+    margin: 10px;
+    width: 30%;
+    border: solid rgba(0, 0, 0, 0.123);
+}
+
+ul {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    text-align: center;
+    margin: auto;
+    display: inline;
+    color: white;
+    width: 33.33%;
+    height: 30px;
+    padding: 20px;
+    cursor: pointer;
+}
+
+.action {
+    background-color: #424f68;
+}
+
+@media screen and (max-width: 800px) {
+    .Cpanel {
+        width: 90%;
+    }
+}

@@ -1,38 +1,89 @@
-.App {
-  text-align: center;
+:root {
+    --height-width-table: 80px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body {
+    margin: 0;
+    background-color: #2d3647;
+    user-select: none;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.my-app {
+    display: flex;
+    justify-content: space-between;
+    max-width: 100%;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.allTables {
+    margin: 10px;
+    height: 600px;
+    padding: 50px 0;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    width: 70%;
+    border: solid rgba(0, 0, 0, 0.123);
 }
 
-.App-link {
-  color: #61dafb;
+.table {
+    cursor: pointer;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    margin: 15px auto;
+    width: var(--height-width-table);
+    height: var(--height-width-table);
+    background-color: #9cd061;
+    color: white;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+P span {
+    border-top: solid rgba(255, 255, 255, 0.384);
+}
+
+.onePersonTable {
+    clip-path: circle(50% at 50% 50%);
+}
+
+.towPersonTable {
+    clip-path: ellipse(50% 28% at 50% 50%);
+}
+
+.threePersonTable {
+    clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+    align-items: end;
+}
+
+.fourPersonTable {
+    clip-path: inset(0 0 0 0);
+}
+
+.fivePersonTable {
+    clip-path: polygon(50% 0%, 100% 45%, 82% 100%, 18% 100%, 0 45%);
+}
+
+.orderDetails {
+    text-align: center;
+    color: white;
+    border-bottom: solid white;
+}
+
+.busy {
+    background-color: rgb(253, 70, 70);
+}
+
+.shortly {
+    background-color: rgb(243, 179, 2);
+}
+
+@media screen and (max-width: 800px) {
+    .allTables {
+        width: 90%;
+    }
+    .my-app {
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
 }
