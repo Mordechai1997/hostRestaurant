@@ -52,7 +52,7 @@ P span {
 
 .threePersonTable {
     clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
-    align-items: end;
+    align-items: self-end;
 }
 
 .fourPersonTable {
